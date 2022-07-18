@@ -37,7 +37,7 @@ $(function() {
     let height = $window.height();
 
     setInterval(function () {
-        if ((width != $window.width()) || (height != $window.height())) {
+        if ((width != $window.width())) {
             width = $window.width();
             height = $window.height();
             location.reload();
