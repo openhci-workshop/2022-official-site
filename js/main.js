@@ -1,4 +1,4 @@
-import { main } from "./tower.js"
+// import { main } from "./tower.js"
 
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 let vh = window.innerHeight * 0.01;
@@ -7,18 +7,18 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 $(function() {
 // model position control
-    let windowSize = window.matchMedia("(min-width: 768px)")
-    let mainTower;
-    function modelControl(size) {
-        if (size.matches) { // If media query matches
-            mainTower = main(750, -20, true);
-        } else {
-            mainTower = main(485, 0, false);
-        }
-        mainTower;
-    }
-    modelControl(windowSize) // Call listener function at run time
-    windowSize.addListener(modelControl);    
+    // let windowSize = window.matchMedia("(min-width: 768px)")
+    // let mainTower;
+    // function modelControl(size) {
+    //     if (size.matches) { // If media query matches
+    //         mainTower = main(750, -20, true);
+    //     } else {
+    //         mainTower = main(485, 0, false);
+    //     }
+    //     mainTower;
+    // }
+    // modelControl(windowSize) // Call listener function at run time
+    // windowSize.addListener(modelControl);    
 //btn open
     $(".panel-collapse").on('show.bs.collapse', function() {
         $(this).siblings('.card_a_close').addClass('active');
