@@ -3,7 +3,25 @@ import { main } from "./tower.js"
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 let vh = window.innerHeight * 0.01;
 // Then we set the value in the --vh custom property to the root of the document
-document.documentElement.style.setProperty('--vh', `${vh}px`);
+//document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+function detectiOS() {
+    if( [
+        'iPad Simulator',
+        'iPhone Simulator',
+        'iPod Simulator',
+        'iPad',
+        'iPhone',
+        'iPod'
+      ].includes(navigator.platform) || (navigator.userAgent.includes("Mac") && "ontouchend" in document)){
+        //document.documentElement.style.setProperty('scroll-behavior', `smooth !important`);
+        alert("ios");
+        const el = document.querySelector('html');
+        el.style.scrollBehavior = 'smooth';
+        //$('html').css("scroll-behavior", "smooth !important");
+      }
+}
+detectiOS();
 
 $(function() {
 // model position control
