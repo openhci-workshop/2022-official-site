@@ -15,7 +15,7 @@ function detectiOS() {
         'iPod'
       ].includes(navigator.platform) || (navigator.userAgent.includes("Mac") && "ontouchend" in document)){
         //document.documentElement.style.setProperty('scroll-behavior', `smooth !important`);
-        alert("ios");
+        //alert("ios");
         const el = document.querySelector('html');
         el.style.scrollBehavior = 'smooth';
         //$('html').css("scroll-behavior", "smooth !important");
