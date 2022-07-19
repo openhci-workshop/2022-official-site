@@ -17,15 +17,17 @@ html {
 }
 
 body {
-  background-color: #4d515c;
+  background-color: #47575e;
   display: flex;
   flex-direction: column;
-  background-image: url("../image/Rectangle_edit.png"); 
+  /* 毛玻璃測試用背景 */
+  /*  background-image: url("../image/Rectangle.svg"); 
   height: 100%;
   background-position: center bottom;
   background-size: cover;
-  background-attachment: fixed !important;
+  background-attachment: fixed !important; */
   width: auto;
+  min-width: 100%;
   margin: 0 auto;
   overflow-x: hidden;
   justify-content: space-around;
@@ -34,6 +36,7 @@ body {
 .background-image {
   background-image: url("../image/Rectangle_edit.png");
   background-position: center bottom;
+  background-size: cover;
   height: 100%;
   min-width: 100%;
   position: fixed;
