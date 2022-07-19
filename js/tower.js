@@ -7,7 +7,7 @@ const camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.inner
 function main(z_coord, y_coord, activateAnimation) {
     const canvas = document.querySelector('#tower-canvas');
     const renderer = new THREE.WebGLRenderer({canvas, antialias: true, alpha: true });
-    renderer.setSize( window.innerWidth, window.innerHeight );
+    renderer.setSize( window.innerWidth, window.innerHeight*1.05 );
     renderer.setClearColor( 0xffffff, 0 );
     
     const scene = new THREE.Scene();
