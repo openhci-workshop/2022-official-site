@@ -14,12 +14,10 @@ function detectiOS() {
         'iPhone',
         'iPod'
       ].includes(navigator.platform) || (navigator.userAgent.includes("Mac") && "ontouchend" in document)){
-        //document.documentElement.style.setProperty('scroll-behavior', `smooth !important`);
         //alert("ios");
-        let scroll = new SmoothScroll('html');
+        let scroll = new SmoothScroll('html', {easing: 'linear'});
         const el = document.querySelector('html');
         el.style.scrollBehavior = 'smooth';
-        //$('html').css("scroll-behavior", "smooth !important");
       }
 }
 detectiOS();
@@ -74,7 +72,7 @@ $(function() {
         let POV = $($(this).attr('href'));
         //console.log(POV);
         //console.log(POV.offset().top);
-        $('html,body').animate({scrollTop: (POV.offset().top - windowHeight*0.1), scrollLeft: 0},800);
+        $('html,body').animate({scrollTop: (POV.offset().top - windowHeight*0.1), scrollLeft: 0},800, "linear");
     })
     let a = document.querySelector(".navbar-toggler");
     $(".navbar-nav li a").on("click",function () {
