@@ -1,10 +1,8 @@
 import { main } from "./tower.js"
+//import * as smoothscroll from './smoothscroll.js';
 
-// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-let vh = window.innerHeight * 0.01;
-// Then we set the value in the --vh custom property to the root of the document
-//document.documentElement.style.setProperty('--vh', `${vh}px`);
-
+let IOS = false;
+const setHTML = document.querySelector('html');
 function detectiOS() {
     if( [
         'iPad Simulator',
@@ -15,9 +13,10 @@ function detectiOS() {
         'iPod'
       ].includes(navigator.platform) || (navigator.userAgent.includes("Mac") && "ontouchend" in document)){
         //alert("ios");
-        let scroll = new SmoothScroll('html', {easing: 'linear'});
-        const el = document.querySelector('html');
-        el.style.scrollBehavior = 'smooth';
+        //let scroll = new SmoothScroll('html', {easing: 'linear'});
+        //smoothscroll.polyfill;
+        IOS = true;
+        setHTML.style.scrollBehavior = 'smooth';
       }
 }
 detectiOS();
@@ -72,6 +71,12 @@ $(function() {
         let POV = $($(this).attr('href'));
         //console.log(POV);
         //console.log(POV.offset().top);
+        if(IOS){
+            setHTML.style.scrollBehavior = 'auto';
+            setTimeout(function(){
+                setHTML.style.scrollBehavior = 'smooth';
+            },800);
+        }
         $('html,body').animate({scrollTop: (POV.offset().top - windowHeight*0.1), scrollLeft: 0},800, "linear");
     })
     let a = document.querySelector(".navbar-toggler");
