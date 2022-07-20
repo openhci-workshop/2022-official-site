@@ -1049,6 +1049,7 @@ white-line {
     width: 30vw;
     max-width: 780px;
     min-height: 45vh;
+    height: 40vw;
     margin: auto;
   }
   #schedule .box {
