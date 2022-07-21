@@ -361,7 +361,7 @@ t-14 {
 
 .card_Speaker {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   cursor: pointer;
   line-height: 1;
 }
