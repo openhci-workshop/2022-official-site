@@ -192,6 +192,8 @@ function getOffset(el) {
     };
 }
 
+
+
 const scheduleInfo = {
     "前置工作坊": [
         {
@@ -554,6 +556,7 @@ function schedule_information_insertion(type) {
                                     <br>
                                     <t-24><blue-text> Day${idx+1} </blue-text></t-24>
                                 </card-title>`;
+                                
             let index = 1;
             for (const [key, value] of Object.entries(schedule)) {
                 content += `<div class="schedule-text">
@@ -564,6 +567,13 @@ function schedule_information_insertion(type) {
                     content += "<white-line></white-line>";
                     index += 1;
                 }
+                
+            }
+            if( (idx == 1 && key == "前置工作坊") || (idx == 2 && key == "正式工作坊") ){
+                content +=  `<button type="button" class="cta_btn" style="max-height: 100%; margin:auto; margin-bottom:5%;" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScXBW5Z-xjLmo55iADtUDajNS3eGo_OYl8kx2GOh-LEo0O-uA/viewform')">我要報名！</button> `;
+            }
+            if( (idx == 1 && key == "正式工作坊") ){
+                content +=  `<button type="button" class="cta_btn nav-link" style="max-height: 100%; margin:auto; margin-bottom:5%;" href="#speaker">講者陣容</button> `;
             }
             content += endDiv;
             workshop += content;
