@@ -1,5 +1,5 @@
 import { main } from "./tower.js"
-//import * as smoothscroll from './smoothscroll.js';
+import * as smoothscroll from './smoothscroll.js';
 
 const scheduleInfo = {
     "前置工作坊": [
@@ -12,7 +12,7 @@ const scheduleInfo = {
             "14:00 ~ 15:30": "演講",
             "15:30 ~ 17:00": "學員討論",
             "17:00 ~ 18:00": "晚餐",
-            "18:00 ~ 19:00": "工具課程： Processing",
+            "18:00 ~ 19:00": "工具課程： Creative Coding",
             "19:00 ~ 20:30": "學員討論"
         },
         {
