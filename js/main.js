@@ -537,6 +537,7 @@ $(function() {
         }
         else{
             if(sc > card_start){
+                $("#top_navbar_phone").css("display", "flex");
                 $("#top_navbar_phone").fadeIn(200);
                 $('.menu-control').fadeOut();
             }
