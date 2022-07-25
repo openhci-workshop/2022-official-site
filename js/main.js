@@ -649,12 +649,14 @@ function schedule_information_insertion(type) {
             if (type == "desktop") {
                 activeDiv = (idx == 0 && key == "前置工作坊")  ? `<div class="carousel-item active">`: `<div class="carousel-item">`;
             }
+            let start_date = 13;
+            if(key=="正式工作坊") start_date = 26;
             let content = `${activeDiv}
                             <div class="card_b">
                                 <card-title>
                                     <t-24>${key}</t-24>
                                     <br>
-                                    <t-24><blue-text> Day${idx+1} </blue-text></t-24>
+                                    <t-24><blue-text>8 / ${start_date + idx}・Day ${idx+1} </blue-text></t-24>
                                 </card-title>`;
                                 
             let index = 1;
