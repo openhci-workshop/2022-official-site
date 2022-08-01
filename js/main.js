@@ -122,7 +122,7 @@ const groupInfo = {
             "name": "左雅致",
             "school": "崑山科技大學",
             "department": "資訊管理學系",
-            "img_url": "image/speaker/logo.jpg",
+            "img_url": "https://storage.googleapis.com/openhci-2022/photography/%E6%94%9D%E5%BD%B1%E7%B5%84_%E5%B7%A6%E9%9B%85%E8%87%B4.jpeg",
             "personal_url": ""
         },
         {
