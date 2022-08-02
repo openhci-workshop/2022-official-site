@@ -1,9 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
 @font-face {
   font-family: "SF Pro Display";
   src: url("../SF_Pro_Display/SFPRODISPLAYREGULAR.woff") format("woff"), url("../SF_Pro_Display/SFPRODISPLAYREGULAR.ttf") format("truetype"), url("../SF_Pro_Display/SFPRODISPLAYREGULAR.eot") format("embedded-opentype");
 }
+
 html {
   width: 100%;
   margin: 0 auto;
@@ -60,41 +62,41 @@ body {
 
 .background_test .air.air1 {
   -webkit-animation: wave 30s linear infinite;
-          animation: wave 30s linear infinite;
+  animation: wave 30s linear infinite;
   z-index: 1000;
   opacity: 1;
   -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation-delay: 0s;
   bottom: 0;
 }
 
 .background_test .air.air2 {
   -webkit-animation: wave2 15s linear infinite;
-          animation: wave2 15s linear infinite;
+  animation: wave2 15s linear infinite;
   z-index: 999;
   opacity: 0.5;
   -webkit-animation-delay: -5s;
-          animation-delay: -5s;
+  animation-delay: -5s;
   bottom: 10px;
 }
 
 .background_test .air.air3 {
   -webkit-animation: wave 30s linear infinite;
-          animation: wave 30s linear infinite;
+  animation: wave 30s linear infinite;
   z-index: 998;
   opacity: 0.2;
   -webkit-animation-delay: -2s;
-          animation-delay: -2s;
+  animation-delay: -2s;
   bottom: 15px;
 }
 
 .background_test .air.air4 {
   -webkit-animation: wave2 5s linear infinite;
-          animation: wave2 5s linear infinite;
+  animation: wave2 5s linear infinite;
   z-index: 997;
   opacity: 0.7;
   -webkit-animation-delay: -5s;
-          animation-delay: -5s;
+  animation-delay: -5s;
   bottom: 20px;
 }
 
@@ -102,6 +104,7 @@ body {
   0% {
     background-position-x: 0px;
   }
+
   100% {
     background-position-x: 1000px;
   }
@@ -111,26 +114,32 @@ body {
   0% {
     background-position-x: 0px;
   }
+
   100% {
     background-position-x: 1000px;
   }
 }
+
 @-webkit-keyframes wave2 {
   0% {
     background-position-x: 0px;
   }
+
   100% {
     background-position-x: -1000px;
   }
 }
+
 @keyframes wave2 {
   0% {
     background-position-x: 0px;
   }
+
   100% {
     background-position-x: -1000px;
   }
 }
+
 .test {
   position: absolute;
   top: 0;
@@ -342,7 +351,7 @@ t-14 {
   margin: 0 1vw;
   border-radius: 16px;
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: white;
   list-style-type: circle;
   font-size: 2vw;
@@ -425,7 +434,7 @@ white-line {
   text-align: justify;
   text-justify: distribute-all-lines;
   -moz-text-align-last: justify;
-       text-align-last: justify;
+  text-align-last: justify;
 }
 
 /* 手機 */
@@ -727,7 +736,7 @@ white-line {
 .organizer_box {
   width: 100%;
   height: 20vh;
-  background: linear-gradient(rgba(200, 200, 200, 0) 0%, rgba(200, 200, 200, 0.3) 30%,rgba(200, 200, 200, 0.5) 80%,rgba(200, 200, 200, 0.5) 100%);
+  background: linear-gradient(rgba(200, 200, 200, 0) 0%, rgba(200, 200, 200, 0.3) 30%, rgba(200, 200, 200, 0.5) 80%, rgba(200, 200, 200, 0.5) 100%);
   -webkit-backdrop-filter: unset;
   backdrop-filter: unset;
 }
@@ -744,9 +753,9 @@ white-line {
   /* backdrop-filter: blur(3px); */
   /* background: linear-gradient(rgba(200, 200, 200, 0) 0%, rgba(200, 200, 200, 0.5) 30%, 
   rgba(200, 200, 200, 0.5) 50%, rgba(200, 200, 200, 0.5) 70%); */
-  background: rgba(200, 200, 200, 0.5) ;
+  background: rgba(200, 200, 200, 0.5);
   -webkit-backdrop-filter: unset;
-          backdrop-filter: unset;
+  backdrop-filter: unset;
   padding-bottom: 0%;
 }
 
@@ -761,7 +770,7 @@ white-line {
   background: linear-gradient(rgba(200, 200, 200, 0.5) 50%, rgba(200, 200, 200, 0.5) 100%);
   /* backdrop-filter: blur(4px); */
   -webkit-backdrop-filter: unset;
-          backdrop-filter: unset;
+  backdrop-filter: unset;
 }
 
 #contant .card_e {
@@ -770,7 +779,7 @@ white-line {
   float: right;
   background: linear-gradient(rgba(200, 199, 200, 0.5) 10%, rgba(120, 120, 130, 0.5) 25%, rgba(20, 20, 20, 0.5) 70%, rgba(0, 0, 0, 0.5) 100%);
   -webkit-backdrop-filter: unset;
-          backdrop-filter: unset;
+  backdrop-filter: unset;
 }
 
 /* 導引列all */
@@ -793,10 +802,11 @@ white-line {
   margin-bottom: 10px;
 }
 
-#top_navbar_computer{
+#top_navbar_computer {
   display: none;
 }
-#top_navbar_phone{
+
+#top_navbar_phone {
   display: none;
 }
 
@@ -1044,25 +1054,31 @@ white-line {
     float: right;
     margin-right: 20%;
   }
+
   #contant .box {
     margin-right: 10%;
     margin-bottom: 25vh;
   }
+
   #home .box {
     margin-top: 10%;
     margin-right: 10%;
     display: flex;
     justify-content: flex-start;
   }
+
   .main_phone {
     display: none;
   }
+
   .cta_btn {
     box-shadow: 0px 0px 0px 0px rgba(97, 255, 208, 0.3), 0px 0px 0px 0px rgba(97, 255, 208, 0.3), 0px 0px 0px 0px rgba(79, 111, 224, 0.38), 0px 0px 0px 0px rgba(42, 132, 215, 0.3), inset 0px -5px 10px 2px rgba(38, 87, 161, 0.3), inset 0px 5px 10px 2px rgba(24, 149, 126, 0.3), inset -8px 1px 15px 2px rgba(139, 172, 222, 0.86), inset 8px -1px 15px 2px rgba(51, 197, 179, 0.86);
   }
+
   #Programs .box {
     margin-right: 20%;
   }
+
   #carouselPrograms .card_d {
     min-width: 350px;
     width: 30vw;
@@ -1071,51 +1087,62 @@ white-line {
     max-height: 400px;
     margin: auto;
   }
+
   #schedule .box {
     margin-right: 20%;
   }
+
   .card_b {
     min-width: 350px;
     width: 30vw;
     max-width: 700px;
     max-width: 780px;
-    height: 610px;
+    height: 650px;
     margin: auto;
   }
+
   #speaker .box {
     margin-right: 20%;
   }
+
   .panel-collapse i {
     transition: all 0.5s;
     cursor: pointer;
   }
+
   .panel-collapse.active i {
     transform: rotate(180deg);
   }
+
   /* 部分卡面電腦只佔一半 */
   #Apply .card_a {
     width: 49%;
     float: left;
   }
+
   #Previous .card_a {
     /* width: 42%; */
     float: left;
     /* margin-right: 5%;
     margin-bottom: 5%; */
   }
+
   .card_space {
     content: "";
     display: block;
     clear: right;
   }
+
   #Previous .card_a_close {
     padding-top: 0;
     float: right;
   }
+
   .ID_Card_Q2 {
     -webkit-margin-start: 2%;
-            margin-inline-start: 2%;
+    margin-inline-start: 2%;
   }
+
   /* 導引列用 */
   .side-nav {
     display: flex;
@@ -1127,6 +1154,7 @@ white-line {
     text-align: right;
     z-index: 5;
   }
+
   #home .side-nav {
     display: flex;
     align-items: center;
@@ -1139,53 +1167,68 @@ white-line {
     height: max-content;
     justify-content: flex-end;
   }
+
   .navbar-bottom-phone {
     display: none !important;
   }
+
   .navbar {
     display: inline-block;
   }
+
   .navbar-phone {
     display: none !important;
   }
+
   .navbar-brand {
     display: inline-block;
     padding: 0;
     margin-right: 50px;
   }
+
   .navbutton-com {
     vertical-align: middle;
     margin-right: 30px;
   }
+
   .navbutton-phone {
     float: left;
     margin-right: 0;
   }
+
   .navbar-toggler {
     float: right;
   }
+
   #Programs_phone {
     display: none;
   }
+
   #carouselPrograms {
     display: block;
   }
+
   #carousel_phone {
     display: none;
   }
+
   #schedule_phone {
     display: none;
   }
+
   #carouselSchedule {
     display: block;
     margin-top: 26px;
   }
+
   #Speaker_phone {
     display: none;
   }
+
   #carouselSpeaker {
     display: block;
   }
+
   .carousel-inner {
     padding-bottom: 1vh;
   }
@@ -1193,10 +1236,11 @@ white-line {
   .organizer_box {
     width: 100%;
     height: 20vh;
-    background: linear-gradient(rgba(200, 200, 200, 0) 0%, rgba(200, 200, 200, 0.3) 30%,rgba(200, 200, 200, 0.5) 80%,rgba(200, 200, 200, 0.5) 100%);
+    background: linear-gradient(rgba(200, 200, 200, 0) 0%, rgba(200, 200, 200, 0.3) 30%, rgba(200, 200, 200, 0.5) 80%, rgba(200, 200, 200, 0.5) 100%);
     -webkit-backdrop-filter: unset;
     backdrop-filter: unset;
   }
+
   #organizer .card_e {
     width: 100%;
     align-self: flex-end;
@@ -1208,11 +1252,12 @@ white-line {
         rgba(200, 200, 200, 0) 60%, rgba(200, 200, 200, 0) 100%); */
     /* background: linear-gradient(rgba(200, 200, 200, 0) 0%, rgba(200, 200, 200, 0.5) 30%,
      rgba(200, 200, 200, 0.5) 50%, rgba(200, 200, 200, 0.5) 70%); */
-    background: linear-gradient(rgba(200, 200, 200, 0.5) 0%, rgba(200, 200, 200, 0.5) 80%,rgba(200, 200, 200, 0.5) 100%);
+    background: linear-gradient(rgba(200, 200, 200, 0.5) 0%, rgba(200, 200, 200, 0.5) 80%, rgba(200, 200, 200, 0.5) 100%);
     -webkit-backdrop-filter: unset;
-            backdrop-filter: unset;
+    backdrop-filter: unset;
     padding-bottom: 0%;
   }
+
   #Sponsors .card_e {
     width: 100%;
     align-self: flex-end;
@@ -1220,39 +1265,48 @@ white-line {
     background: linear-gradient(rgba(200, 200, 200, 0.5) 50%, rgba(200, 200, 200, 0.5) 100%);
     /* backdrop-filter: blur(4px); */
     -webkit-backdrop-filter: unset;
-            backdrop-filter: unset;
+    backdrop-filter: unset;
   }
+
   .card_Speaker {
     display: flex;
     flex-direction: row;
     /* justify-content: space-between; */
     line-height: 1;
   }
+
   .card_Speaker .card_d_img {
     margin: 0;
   }
+
   .speaker_phone {
     padding-right: 15px;
     padding-left: 15px;
   }
+
   .card_height {
     height: 212px;
   }
+
   .T-E {
     font-size: 32px;
   }
+
   .T-C {
     font-size: 20px;
   }
+
   /*卡片大標*/
   card-title t-20 {
     font-size: 24px;
   }
+
   /*卡片小標*/
   card-title t-16 {
     font-size: 20px;
   }
 }
+
 section {
   opacity: 0;
   position: relative !important;
@@ -1299,7 +1353,7 @@ logo {
   position: relative !important;
   opacity: 1;
   -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-duration: 2s;
   transition: opacity 2000ms ease-in;
 }
 
@@ -1309,4 +1363,7 @@ logo {
   top: 1.25%;
   left: 0;
   z-index: -1;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */
