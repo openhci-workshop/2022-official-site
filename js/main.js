@@ -129,7 +129,7 @@ const groupInfo = {
             "name": "丁容",
             "school": "國立臺灣大學",
             "department": "園藝暨景觀學系 景觀遊憩組",
-            "img_url": "image/speaker/logo.jpg",
+            "img_url": "https://storage.googleapis.com/openhci-2022/photography/%E6%94%9D%E5%BD%B1%E7%B5%84_%E4%B8%81%E5%AE%B9.jpg",
             "personal_url": "https://t-jung.wixsite.com/ronronhb?fbclid=IwAR25saUo3c8GCuUm27u0DKDeYSAJsYMhpqCIm_o_tRgS1vqraMJKN28Gy7w"
         }]
     },
@@ -259,7 +259,7 @@ const groupInfo = {
             "name": "范愷祐",
             "school": "國立政治大學",
             "department": "廣電系",
-            "img_url": "image/speaker/logo.jpg",
+            "img_url": "https://storage.googleapis.com/openhci-2022/visual-design/%E8%A6%96%E8%A6%BA%E7%B5%84_%E8%8C%83%E6%84%B7%E7%A5%90.jpg",
             "personal_url": "kyofan.notion.site"
         },
         {
