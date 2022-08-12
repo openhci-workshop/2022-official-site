@@ -262,7 +262,7 @@ const groupInfo = {
             "school": "國立政治大學",
             "department": "廣電系",
             "img_url": "https://storage.googleapis.com/openhci-2022/visual-design/%E8%A6%96%E8%A6%BA%E7%B5%84_%E8%8C%83%E6%84%B7%E7%A5%90.jpg",
-            "personal_url": "kyofan.notion.site"
+            "personal_url": "https://kyofan.notion.site/"
         },
         {
             "name": "李悦恩",
